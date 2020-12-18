@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <!--Heading Section-->
+    <head>
+        <meta charset="utf-8">
+        <title>S3877765_IIT_A1</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Padauk&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!--Body section-->
+    <body>
+        <!--Navigation Bar-->
+        <div class="navigation">
+            <div class="inside-navigation">
+
+                <div class="decoration">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="decoration">
+                    <a href="about.html">About</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Content-->
+        <div class="content">
+            <div class="content-decoration">
+
+                <div class="inside-content">
+                    <div class="background-image" style="background-image: url(images/bluesky.jpg);"></div>
+                    <a href="overview.html">
+                        <div class="text-inside">Overview: Git and GitHub</div>
+                    </a>
+                </div>
+
+                <div class="inside-content">
+                    <div class="background-image" style="background-image: url(images/moon.jpg);"></div>
+                    <a href="installation.html">
+                        <div class="text-inside">How to install Git and GitHub</div>
+                    </a>
+                </div>
+
+                <div class="inside-content">
+                    <div class="background-image" style="background-image: url(images/mountains.jpg);"></div>
+                    <a href="basic.html">
+                        <div class="text-inside">Basic Git Commands</div>
+                    </a>
+                </div>
+
+                <div class="inside-content">
+                    <div class="background-image" style="background-image: url(images/rainforest.jpeg);"></div>
+                    <a href="conflicts.html">
+                        <div class="text-inside">Conflicts and solutions</div>
+                    </a>
+                </div>
+
+                <div class="inside-content">
+                    <div class="background-image" style="background-image: url(images/sun.jpg);"></div>
+                    <a href="branching.html">
+                        <div class="text-inside">Branching</div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </body>
+
+<script>
+    const insideContents = document.querySelectorAll('.inside-content')
+
+    insideContents.forEach(insideContent => {
+        insideContent.addEventListener('mouseover', () => {
+            insideContent.childNodes[1].classList.add('img-darken');
+        })
+
+        insideContent.addEventListener('mouseout', () => {
+            insideContent.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
